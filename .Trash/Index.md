@@ -1,47 +1,18 @@
-# Index
-
-<span class="nav">[Locations](#Locations) [NPCs](#NPCs)  [Factions](#Factions)</span>
-
-## Map
-```leaflet
-id: full-index
-markerTag:
-	- location
-	- event
-	- faction
-	- npc
-image: [[Khorvaire.jpg]]
-image: [[Mine of Whitecliff.png]]
-defaultZoom: 6.3
-zoomDelta: 0.05
-unit: mi
-scale: 400
-```
-^khorvaire-map
-
-## Locations
-```dataviewjs
-
-dv.list(dv.pages('"2. Compendium"')
-  .where(p => p.type == "location")
-  .sort(p => p.file.name, 'asc')
-  .map(p => p.file.link))
-```
-
-## NPCs
-
-```dataviewjs
-dv.list(dv.pages('"2. Compendium"')
-  .where(p => p.type == "npc" && p.status != "dead")
-  .sort(p => p.file.name, 'asc')
-  .map(p => p.file.link))
-```
-
-## Factions
-
-```dataviewjs
-dv.list(dv.pages('"2. Compendium"')
-  .where(p => p.type == "faction")
-  .sort(p => p.file.name, 'asc')
-  .map(p => p.file.link))
-```
+---
+share: True
+category: "Post Session Logs"
+title: "Post Session Logs"
+---
+- [[2021-01-02]]
+- [[2021-01-16]]
+- [[2021-02-06]]
+- [[2021-02-20]]
+- [[2021-03-13]]
+- [[2021-04-10]]
+- [[2021-05-15]]
+- [[2021-09-10]]
+- [[2021-10-02]]
+- [[2021-10-30]]
+- [[2022-01-22]]
+- [[2022-02-12]]
+- [[2022-02-26]]
